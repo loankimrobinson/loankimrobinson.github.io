@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+categories: [Blogging, Tutorial]
+tags: [favicon]
 ---
 
 # Welcome
