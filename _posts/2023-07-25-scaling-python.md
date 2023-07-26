@@ -146,9 +146,21 @@ data.head()
 ```
 
 
-```{=html}
 <div class="p-Widget jp-RenderedHTMLCommon jp-RenderedHTML jp-mod-trusted jp-OutputArea-output" data-mime-type="text/html">
-<style scoped>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table class="dataframe" border="1">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -241,7 +253,7 @@ data.head()
   </tbody>
 </table>
 </div>
-```
+
 
 ``` python
 print("\n\n==================================DATA SUMMARY==============================\n\n")
@@ -253,9 +265,21 @@ data.describe()
 
     ==================================DATA SUMMARY==============================
 
-```{=html}
 <div class="p-Widget jp-RenderedHTMLCommon jp-RenderedHTML jp-mod-trusted jp-OutputArea-output" data-mime-type="text/html">
-<style scoped>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table class="dataframe" border="1">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -383,7 +407,7 @@ data.describe()
   </tbody>
 </table>
 </div>
-```
+
 
 ## Data Visualization with seaborn
 
