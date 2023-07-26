@@ -147,7 +147,7 @@ data.head()
 
 
 ```{=html}
-<div>
+<div class="p-Widget jp-RenderedHTMLCommon jp-RenderedHTML jp-mod-trusted jp-OutputArea-output" data-mime-type="text/html">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -160,11 +160,9 @@ data.head()
     .dataframe thead th {
         text-align: right;
     }
-    .tablelines table, .tablelines td, .tablelines th {
-        border: 1px solid black;
-    }
+    
 </style>
-<table class="tablelines">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -256,7 +254,7 @@ data.describe()
     ==================================DATA SUMMARY==============================
 
 ```{=html}
-<div>
+<div class="p-Widget jp-RenderedHTMLCommon jp-RenderedHTML jp-mod-trusted jp-OutputArea-output" data-mime-type="text/html">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -269,11 +267,8 @@ data.describe()
     .dataframe thead th {
         text-align: right;
     }
-    .tablelines table, .tablelines td, .tablelines th {
-        border: 1px solid black;
-    }
 </style>
-<table class="tablelines">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
