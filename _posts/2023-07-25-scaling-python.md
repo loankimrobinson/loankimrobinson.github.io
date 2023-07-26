@@ -160,8 +160,11 @@ data.head()
     .dataframe thead th {
         text-align: right;
     }
+    .tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+    }
 </style>
-<table border="1" class="dataframe">
+<table class="tablelines">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -266,8 +269,11 @@ data.describe()
     .dataframe thead th {
         text-align: right;
     }
+    .tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+    }
 </style>
-<table border="1" class="dataframe">
+<table class="tablelines">
   <thead>
     <tr style="text-align: right;">
       <th></th>
