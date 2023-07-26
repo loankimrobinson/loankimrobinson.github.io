@@ -5,40 +5,8 @@ date: 2019-08-09 20:55:00 +0800
 categories: [Blogging, Tutorial]
 tags: [getting started]
 pin: true
-img_path: '/posts/20180809'
 ---
 
-## Prerequisites
-
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed.
-
-## Installation
-
-### Creating a New Site
-
-There are two ways to create a new repository for this theme:
-
-- [**Using the Chirpy Starter**](#option-1-using-the-chirpy-starter) - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
-- [**GitHub Fork**](#option-2-github-fork) - Convenient for custom development, but difficult to upgrade. Unless you are familiar with Jekyll and are determined to tweak or contribute to this project, this approach is not recommended.
-
-#### Option 1. Using the Chirpy Starter
-
-Sign in to GitHub and browse to [**Chirpy Starter**][starter], click the button <kbd>Use this template</kbd> > <kbd>Create a new repository</kbd>, and name the new repository `USERNAME.github.io`, where `USERNAME` represents your GitHub username.
-
-#### Option 2. GitHub Fork
-
-Sign in to GitHub to [fork **Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), and then rename it to `USERNAME.github.io` (`USERNAME` means your username).
-
-Next, clone your site to local machine. In order to build JavaScript files later, we need to install [Node.js][nodejs], and then run the tool:
-
-```console
-$ bash tools/init
-```
-
-> If you don't want to deploy your site on GitHub Pages, append option `--no-gh` at the end of the above command.
-{: .prompt-info }
-
-The above command will:
 
 1. Check out the code to the [latest tag][latest-tag] (to ensure the stability of your site: as the code for the default branch is under development).
 2. Remove non-essential sample files and take care of GitHub-related files.
@@ -80,18 +48,7 @@ Also, if you'd like to self-host the static assets, please refer to the [_chirpy
 
 You may want to preview the site contents before publishing, so just run it by:
 
-```console
-$ bundle exec jekyll s
-```
 
-Or run the site on Docker with the following command:
-
-```console
-$ docker run -it --rm \
-    --volume="$PWD:/srv/jekyll" \
-    -p 4000:4000 jekyll/jekyll \
-    jekyll serve
-```
 
 After a few seconds, the local service will be published at _<http://127.0.0.1:4000>_.
 
@@ -126,25 +83,4 @@ At this point, you can go to the URL indicated by GitHub to access your site.
 
 On self-hosted servers, you cannot enjoy the convenience of **GitHub Actions**. Therefore, you should build the site on your local machine and then upload the site files to the server.
 
-Go to the root of the source project, and build your site as follows:
 
-```console
-$ JEKYLL_ENV=production bundle exec jekyll b
-```
-
-Or build the site on Docker:
-
-```console
-$ docker run -it --rm \
-    --env JEKYLL_ENV=production \
-    --volume="$PWD:/srv/jekyll" \
-    jekyll/jekyll \
-    jekyll build
-```
-
-Unless you specified the output path, the generated site files will be placed in folder `_site`{: .filepath} of the project's root directory. Now you should upload those files to the target server.
-
-[nodejs]: https://nodejs.org/
-[starter]: https://github.com/cotes2020/chirpy-starter
-[pages-workflow-src]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
-[latest-tag]: https://github.com/cotes2020/jekyll-theme-chirpy/tags
