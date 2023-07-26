@@ -252,4 +252,16 @@ tibble::glimpse(iris)
 <h3>
 Thank you for reading
 </h3>
+<hr />
+<div class="footer">
+<p style="text-align: center;">R Shiny with <a href="https://github.com/loankimrobinson/">Loan Robinson</a></p>
+<p style="text-align: center;"><span style="color: #808080;"><em><a href="mailto:loankimrobinson@gmail.com">loankimrobinson@gmail.com</a></em></span></p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<p style="text-align: center;">
+  <a href="https://twitter.com/rshiny_with_loan?lang=en" class="fa fa-twitter"></a>
+  <a href="https://www.linkedin.com/in/loan-robinson-86776994/" class="fa fa-linkedin"></a>
+  <a href="https://github.com/loankimrobinson/" class="fa fa-github"></a>
+  <a href="https://youtube.com/@rshiny_with_loan/" class="fa fa-youtube"></a>
+</p>
+</div>
 </center>
