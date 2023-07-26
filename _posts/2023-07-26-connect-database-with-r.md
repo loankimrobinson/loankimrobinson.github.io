@@ -122,7 +122,7 @@ RPostgres:: dbSendQuery(con, stmt)
 
 <ul>
 
-<img src="../assets/img/connect_database/query.png" width="450" />
+<img src="/assets/img/connect_database/query.png" width="450" />
 
 </ul>
 
@@ -227,7 +227,7 @@ checking_department
 
 <br>
 
-<img src="../assets/img/connect_database/checking.png" width="450" />
+<img src="/assets/img/connect_database/checking.png" width="450" />
 
 </ul>
 
@@ -256,7 +256,7 @@ tibble::glimpse(iris)
 
 <br>
 
-<img src="../assets/img/connect_database/iris.png" width="450" />
+<img src="/assets/img/connect_database/iris.png" width="450" />
 
 </ul>
 
