@@ -2,7 +2,7 @@
 layout: post
 title:  "Scaling and Preprocessing Data with Scikit-Learn for Machine Learning"
 categories: [Tutorial, Python, Machine Learning]
-tags: [favicon, python, ml, scikit]
+tags: [favicon, python, machinelearning, scikit, scaling, preprocessing, transformation]
 ---
 
 
