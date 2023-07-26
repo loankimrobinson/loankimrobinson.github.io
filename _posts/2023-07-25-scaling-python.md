@@ -396,7 +396,7 @@ _ = sns.pairplot(data=subset, hue="MedHouseVal", palette="plasma", plot_kws=dict
 ```
 
 
-![](../assets/img/scaling_python/69a6f974ca37adc30541dc8850b891a87015c1ae.png)
+![](/assets/img/scaling_python/69a6f974ca37adc30541dc8850b891a87015c1ae.png)
 
 
 
@@ -412,7 +412,7 @@ _ = sns.pairplot(data=subset, hue="MedHouseVal", palette="plasma", plot_kws=dict
 ```
 
 
-![](../assets/img/scaling_python/e19e2eb81c0b37f0c50868fcd8494a03b42874fb.png)
+![](/assets/img/scaling_python/e19e2eb81c0b37f0c50868fcd8494a03b42874fb.png)
 
 
 # Scaling Processing
@@ -436,7 +436,7 @@ make_plot(0, california_housing, feature_mapping, xvar = "MedInc", yvar = "AveOc
 ```
 
 
-![](../assets/img/scaling_python/40c171eedf681ee591bcee1e054aa1e22a1c77a5.png)
+![](/assets/img/scaling_python/40c171eedf681ee591bcee1e054aa1e22a1c77a5.png)
 
 
 
@@ -475,7 +475,7 @@ make_plot(1, california_housing, feature_mapping, xvar = "MedInc", yvar = "AveOc
 ```
 
 
-![](../assets/img/scaling_python/fea0f10dc128176c712dfb1274e2c4c531eee7d5.png)
+![](/assets/img/scaling_python/fea0f10dc128176c712dfb1274e2c4c531eee7d5.png)
 
 ## 2. Min-Max Scaling (MinMaxScaler) 
 
@@ -496,7 +496,7 @@ make_plot(2, california_housing, feature_mapping, xvar = "MedInc", yvar = "Popul
 ```
 
 
-![](../assets/img/scaling_python/fef7fe2ab591b463a50372dc9f14ffde93960cea.png)
+![](/assets/img/scaling_python/fef7fe2ab591b463a50372dc9f14ffde93960cea.png)
 
 
 ## 3. Max-Abs Scaling (MaxAbsScaler) 
@@ -514,7 +514,7 @@ make_plot(2, california_housing, feature_mapping, xvar = "MedInc", yvar = "AveOc
 ```
 
 
-![](../assets/img/scaling_python/b78717227d9fe1f08ee6507c54c72d3a1651d079.png)
+![](/assets/img/scaling_python/b78717227d9fe1f08ee6507c54c72d3a1651d079.png)
 
 ## 4. Robust Scaling (RobustScaler) 
 
@@ -541,7 +541,7 @@ make_plot(4, california_housing, feature_mapping, xvar = "MedInc", yvar = "Popul
 ```
 
 
-![](../assets/img/scaling_python/5e0146d6f468996902613a896ab5562d5dfa3567.png)
+![](/assets/img/scaling_python/5e0146d6f468996902613a896ab5562d5dfa3567.png)
 
 ## 5. Power Transformation (Yeo-Johnson) 
 
@@ -567,7 +567,7 @@ make_plot(5, california_housing, feature_mapping, xvar = "MedInc", yvar = "Popul
 ```
 
 
-![](../assets/img/scaling_python/5a46ca5b724c9b0b90337bcb43b99531a03859e0.png)
+![](/assets/img/scaling_python/5a46ca5b724c9b0b90337bcb43b99531a03859e0.png)
 
 
 ## 6. Power Transformation (Box-Cox) 
@@ -578,7 +578,7 @@ make_plot(6, california_housing, feature_mapping, xvar = "MedInc", yvar = "Popul
 ```
 
 
-![](../assets/img/scaling_python/423c957cca84e6264f6c6eb1fe04465aa83e8a35.png)
+![](/assets/img/scaling_python/423c957cca84e6264f6c6eb1fe04465aa83e8a35.png)
 
 ## 7. Quantile Transformation (Uniform pdf) 
 
@@ -605,7 +605,7 @@ make_plot(7, california_housing, feature_mapping, xvar = "MedInc", yvar = "AveOc
 ```
 
 
-![](../assets/img/scaling_python/227bb0b87fce61a0ef52d115b161a390f740ee03.png)
+![](/assets/img/scaling_python/227bb0b87fce61a0ef52d115b161a390f740ee03.png)
 
 ## 8. Quantile Transformation (Gaussian pdf) 
 
@@ -614,7 +614,7 @@ make_plot(8, california_housing, feature_mapping, xvar = "MedInc", yvar = "AveOc
 ```
 
 
-![](../assets/img/scaling_python/799567ea5b6588b9690f15e18e565b560e45ae54.png)
+![](/assets/img/scaling_python/799567ea5b6588b9690f15e18e565b560e45ae54.png)
 
 ## 9. Sample-wise L2 Normalizing (Normalizer) 
 
@@ -638,5 +638,5 @@ commonly used by the Information Retrieval community.
 make_plot(9, california_housing, feature_mapping, xvar = "MedInc", yvar = "AveOccup",  color = "ocean_r")
 ```
 
-![](../assets/img/scaling_python/5c184a2cf60f6d74b2d185b3f49cf2bd74133506.png)
+![](/assets/img/scaling_python/5c184a2cf60f6d74b2d185b3f49cf2bd74133506.png)
 
