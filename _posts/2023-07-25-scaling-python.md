@@ -2,7 +2,7 @@
 layout: post
 title:  "Scaling and Preprocessing Data with Scikit-Learn for Machine Learning"
 categories: [Tutorial, Python, Machine Learning]
-tags: [favicon, python, ml, scikit]
+tags: [favicon, python, machinelearning, scikit, scaling, preprocessing, transformation]
 ---
 
 
@@ -226,6 +226,7 @@ data.head()
 </table>
 
 
+
 ``` python
 print("\n\n==================================DATA SUMMARY==============================\n\n")
 data.describe()
@@ -351,6 +352,7 @@ data.describe()
     </tr>
   </tbody>
 </table>
+
 
 ## Data Visualization with seaborn
 
