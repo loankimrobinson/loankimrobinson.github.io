@@ -22,29 +22,23 @@ tags: [favicon, r, database, sql]
     Environment Variables <b>`Sys.getenv()`</b>. Don’t use the wrong
     funtion.
 
-<ul>
 
-``` r
+
+```
 Sys.setenv("database_username"="your_username",
            "database_password"="your_password")
 ```
 
-</ul>
-
-<br>
 
   You can check whether your environment variables already stored by
     `Sys.getenv()`. This is an example.
 
-<ul>
 
-``` r
+
+```
 Sys.getenv("database_username")
 ```
 
-    ## [1] ""
-
-</ul>
 
 ## Connect to Database via R
 
@@ -55,9 +49,9 @@ Sys.getenv("database_username")
     `RPostgres::Postgres()`,`dbname`, `host`, `port`, `user`, and
     `password`
 
-<ul>
 
-``` r
+
+```
 library(DBI)
 library(RPostgres)
 library(dplyr)
@@ -77,22 +71,20 @@ con
 
     ## <PqConnection> database_R@localhost:5432
 
-</ul>
 
-<br>
 
  Using `dbListTables()` to list all of tables in your database.
 
-<ul>
 
-``` r
+
+```
 # returns a list of tables in your database
 RPostgres::dbListTables(con) 
 ```
 
     ## [1] "employee"   "department" "cars"       "iris"
 
-</ul>
+
 
 ### Create tables via R
 
@@ -100,9 +92,9 @@ RPostgres::dbListTables(con)
 
 2.  Send the query to database with `RPostgres:: dbSendQuery()`
 
-<ul>
 
-``` r
+
+```
 stmt = "CREATE TABLE department (
          department_id int unique not null,
          department varchar (100), 
@@ -113,26 +105,24 @@ stmt = "CREATE TABLE department (
 RPostgres:: dbSendQuery(con, stmt)
 ```
 
-</ul>
 
-<br>
 
   You can see the `department` table existed in the database
     `database_R`
 
-<ul>
+
 
 <img src="/assets/img/connect_database/query.png" width="450" />
 
-</ul>
+
 
 ### Extract, Transform, and Load (ETL) via R to database
 
 #### 1. Extract data
 
-<ul>
 
-``` r
+
+```
 # read data
 dt <- read.csv("database_R_data.csv")
 tibble::glimpse(dt)
@@ -146,16 +136,16 @@ tibble::glimpse(dt)
     ## $ department        <chr> "Services", "Engineering", "Services", "Services", "…
     ## $ department_budget <int> 600000, 1250000, 600000, 600000, 750000, 1000000, 45…
 
-</ul>
+
 
 #### 2. Transform data
 
-<ul>
+
 
 Create department table by select `department, department_budget`, make
 sure it’s not duplicated and create `department_id`
 
-``` r
+```
 department <- dt %>% select(department, department_budget) %>% unique() %>% mutate(department_id := 1:n()) %>% select(department_id, everything())
 
 department 
@@ -175,15 +165,15 @@ department
     ## 18            11       Product Management           2000000
     ## 21            12                    Sales           1100000
 
-</ul>
+
 
 #### 3. Load data to database
 
-<ul>
+
 
 You can use `dbWriteTable()` or `RPostgres::dbSendQuery()`
 
-``` r
+```
 # you can use dbWriteTable
 RPostgres::dbWriteTable(con,'department',department , row.names=FALSE,overwrite = TRUE)
 
@@ -200,13 +190,13 @@ RPostgres::dbSendQuery(
 )
 ```
 
-</ul>
+
 
 #### 4. Checking the table existed in database
 
-<ul>
 
-``` r
+
+```
 checking_department <- RPostgres::dbGetQuery(con, 'SELECT * FROM department')
 checking_department 
 ```
@@ -225,19 +215,17 @@ checking_department
     ## 11            11                  Support            500000
     ## 12            12     Business Development            200000
 
-<br>
+
 
 <img src="/assets/img/connect_database/checking.png" width="450" />
 
-</ul>
 
-<br>
 
 #### 5. Uploading any dataset to your database
 
-<ul>
 
-``` r
+
+```
 # upload iris dataset into the database
 RPostgres::dbWriteTable(con,'iris',iris , row.names=FALSE,overwrite = TRUE)
 
@@ -254,13 +242,11 @@ tibble::glimpse(iris)
     ## $ Petal.Width  <dbl> 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.…
     ## $ Species      <chr> "setosa", "setosa", "setosa", "setosa", "setosa", "setosa…
 
-<br>
+
 
 <img src="/assets/img/connect_database/iris.png" width="450" />
 
-</ul>
 
-<br> <br>
 
 <center>
 <h3>
