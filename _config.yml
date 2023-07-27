@@ -82,10 +82,10 @@ avatar: "/assets/img/favicons/mypic.jpeg"
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: 'disqus'
   # The active options are as follows:
   disqus:
-    shortname: loanrobinson # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: loanrobinson
   # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>
