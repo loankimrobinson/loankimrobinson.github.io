@@ -21,7 +21,7 @@ timezone: pst
 
 title: Loan Robinson # the main title
 
-tagline: Python/ R/ Rshiny/ Machine Learning/ Genome /RNA Sequences/ Clinical Trials # it will display as the sub-title
+tagline: Senior Data Scientist/ Python/ R/ Rshiny/ Machine Learning/ RWD/ RWE/ OMOP/ Genome /RNA Sequences/ Clinical Trials # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
